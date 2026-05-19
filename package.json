@@ -1,0 +1,40 @@
+{
+  "name": "tca-rex-version",
+  "version": "1.0.0",
+  "description": "The Chava Alteration - Red Team Exploitation Framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "dev": "nodemon index.js",
+    "scan": "node index.js scan",
+    "crawl": "node index.js crawl",
+    "xss": "node index.js detect:xss",
+    "sqli": "node index.js detect:sqli",
+    "waf": "node index.js waf:detect"
+  },
+  "keywords": [
+    "red-team",
+    "penetration-testing",
+    "vulnerability-scanner",
+    "xss",
+    "sql-injection",
+    "waf-bypass",
+    "cybersecurity"
+  ],
+  "author": "SatriaBagusNurhadianto",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "puppeteer": "^19.0.0",
+    "yargs": "^17.7.1",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22"
+  }
+}

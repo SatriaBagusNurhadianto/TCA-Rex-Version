@@ -1,0 +1,46 @@
+# TCA-Rex-Version Go Configuration
+
+scanning:
+  timeout: 10s
+  retries: 3
+  concurrency: 50
+  rate_limit: 100ms
+
+ports:
+  common:
+    - 21
+    - 22
+    - 23
+    - 25
+    - 53
+    - 80
+    - 110
+    - 143
+    - 443
+    - 465
+    - 587
+    - 995
+    - 3306
+    - 5432
+    - 8080
+    - 8443
+
+waf:
+  detection:
+    enabled: true
+    test_payloads:
+      - "<script>alert('XSS')</script>"
+      - "' OR '1'='1"
+      - "../../../etc/passwd"
+  bypass:
+    techniques:
+      - hex_encoding
+      - url_encoding
+      - unicode_escaping
+      - base64_encoding
+      - header_manipulation
+      - rate_limiting_bypass
+
+output:
+  format: json
+  directory: "./output"
