@@ -2,7 +2,7 @@
   "name": "tca-rex-version",
   "version": "1.0.0",
   "description": "The Chava Alteration - Red Team Exploitation Framework",
-  "main": "index.js",
+  "main": "nodejs/index.js",
   "scripts": {
     "start": "node index.js",
     "test": "jest",
