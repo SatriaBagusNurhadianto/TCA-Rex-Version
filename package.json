@@ -4,7 +4,7 @@
   "description": "The Chava Alteration - Red Team Exploitation Framework",
   "main": "nodejs/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node nodejs/index.js",
     "test": "jest",
     "dev": "nodemon index.js",
     "scan": "node index.js scan",
