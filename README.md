@@ -89,7 +89,6 @@ TCA-Rex-Version/
     - paths.txt
 - tests/
   - basic.test.js
-- .github/workflows/ci.yml
 - Dockerfile (optional)
 
 How it fits together:
@@ -346,8 +345,3 @@ Recommended improvements for progression:
 - Implement safe, non-destructive verification routines for vulnerabilities (proof-of-concept rendering rather than server-side changes).
 - Expand and document lab environments for learners (docker-compose or VM images).
 - Add more tests and examples to demonstrate output parsing and reporting.
-
-If you would like, I can:
-- Create the README file in the repository for you (provide confirmation), or
-- Open a PR with this README and the supporting fixes you asked for earlier.
-```
