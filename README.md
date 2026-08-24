@@ -336,12 +336,3 @@ If you encounter permission issues pushing branches or creating PRs, ensure your
 ## License
 
 This repository is released under the GNU General Public License v3.0 (GPL-3.0). See the LICENSE file for details.
-
----
-
-## Acknowledgements and next steps
-
-Recommended improvements for progression:
-- Implement safe, non-destructive verification routines for vulnerabilities (proof-of-concept rendering rather than server-side changes).
-- Expand and document lab environments for learners (docker-compose or VM images).
-- Add more tests and examples to demonstrate output parsing and reporting.
